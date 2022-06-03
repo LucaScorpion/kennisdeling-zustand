@@ -38,7 +38,7 @@ export const App: React.FC = () => {
                 ? 'prev'
                 : 'next';
             return (
-              <div key={i} className={`slide-wrapper ${slideClass}`}>
+              <div key={i} className={`slide ${slideClass}`}>
                 <S />
               </div>
             );
