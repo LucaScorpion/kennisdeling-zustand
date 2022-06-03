@@ -3,8 +3,15 @@ import react from './images/react-logo.png';
 import zustand from './images/zustand-logo.webp';
 import { What } from './slides/What';
 import { Why } from './slides/Why';
+import { Setup } from './slides/Setup';
+import { MyFirstStore } from './slides/MyFirstStore';
 
-const slideComponents = [What, Why];
+const slideComponents = [
+  What,
+  Why,
+  Setup,
+  MyFirstStore,
+];
 
 export const App: React.FC = () => {
   const [slide, setSlide] = useState(0);

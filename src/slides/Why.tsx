@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Why: React.FC = () => (
   <div>
     <h2>Waarom niet Redux?</h2>

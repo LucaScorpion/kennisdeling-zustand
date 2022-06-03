@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const What: React.FC = () => (
   <div>
     <h2>Wat is Zustand?</h2>
