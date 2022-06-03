@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import react from './images/react-logo.png';
 import zustand from './images/zustand-logo.webp';
 import { What } from './slides/What';
-import { Why } from './slides/Why';
+import { WhyNot } from './slides/WhyNot';
 import { Setup } from './slides/Setup';
 import { MyFirstStore } from './slides/MyFirstStore';
+import { WhyNotRedux } from './slides/WhyNotRedux';
 
 const slideComponents = [
   What,
-  Why,
+  WhyNot,
+  WhyNotRedux,
   Setup,
   MyFirstStore,
 ];
