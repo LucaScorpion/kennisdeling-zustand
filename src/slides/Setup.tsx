@@ -1,10 +1,12 @@
 import React from 'react';
+import { InlineCode } from '../Code';
 
 export const Setup: React.FC = () => (
   <div>
     <h2>Setup</h2>
-    <code className="language-bash">
-      npm install zustand
-    </code>
+    <InlineCode language="bash" code="npm install zustand" />
+    <p>
+      Geen components/context/extra laagjes/etc nodig.
+    </p>
   </div>
-)
+);

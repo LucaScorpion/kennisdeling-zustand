@@ -1,23 +1,24 @@
 import React from 'react';
+import { CodeBlock, InlineCode } from '../Code';
 
 export const MyFirstStore: React.FC = () => (
   <div>
     <h2>My first store</h2>
-    <pre>
-      <code className="language-typescript">
-{`import create from 'zustand';
+    <CodeBlock language="typescript" code={`
+import create from 'zustand';
 
 export interface OrderStore {
   id: string;
-  setId: (id: string) => void;
 }
 
 export const useOrderStore = create<OrderStore>((set) => ({
   id: 'some-id',
-  setId: (id) => set({ id }),
 }));
 `}
-      </code>
-    </pre>
+    />
+    <ul>
+      <li>Store interface (technisch gezien optioneel, vaak wel nodig)</li>
+      <li>Een <InlineCode code="create" /> call om de store hook te maken</li>
+    </ul>
   </div>
 );
