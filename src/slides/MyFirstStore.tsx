@@ -1,5 +1,5 @@
 import React from 'react';
-import { CodeBlock, InlineCode } from '../Code';
+import { CodeBlock, InlineCode } from '../components/Code';
 
 export const MyFirstStore: React.FC = () => (
   <div>

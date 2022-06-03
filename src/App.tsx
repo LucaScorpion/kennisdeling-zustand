@@ -8,6 +8,7 @@ import { MyFirstStore } from './slides/MyFirstStore';
 import { WhyNotRedux } from './slides/WhyNotRedux';
 import { Example } from './slides/Example';
 import { useHash } from './hooks/useHash';
+import { Final } from './slides/Final';
 
 const slideComponents = [
   What,
@@ -16,6 +17,7 @@ const slideComponents = [
   Setup,
   MyFirstStore,
   Example,
+  Final,
 ];
 
 export const App: React.FC = () => {

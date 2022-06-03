@@ -1,5 +1,5 @@
 import React from 'react';
-import { InlineCode } from '../Code';
+import { InlineCode } from '../components/Code';
 
 export const Setup: React.FC = () => (
   <div>
