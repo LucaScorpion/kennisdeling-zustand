@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import react from './images/react-logo.png';
+import zustand from './images/zustand-logo.webp';
+import { What } from './slides/What';
+import { Why } from './slides/Why';
 
-function App() {
+const slideComponents = [What, Why];
+
+export const App: React.FC = () => {
+  const [slide, setSlide] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="header">
+        <img src={react} className="react-logo" alt="" />
+        <h1>Zustand kennisdeling</h1>
+        <img src={zustand} alt="" />
       </header>
+      <main>
+        <div
+          className="switcher prev"
+          onClick={() => setSlide((p) => Math.max(p - 1, 0))}
+        >
+          ❮
+        </div>
+        <div className="content">
+          {slideComponents.map((S, i) => {
+            const slideClass = i === slide
+              ? 'current'
+              : i < slide
+                ? 'prev'
+                : 'next';
+            return (
+              <div key={i} className={`slide-wrapper ${slideClass}`}>
+                <S />
+              </div>
+            );
+          })}
+        </div>
+        <div
+          className="switcher next"
+          onClick={() => setSlide((p) => Math.min(p + 1, slideComponents.length - 1))}
+        >
+          ❯
+        </div>
+      </main>
     </div>
   );
-}
-
-export default App;
+};
