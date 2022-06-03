@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import react from './images/react-logo.png';
 import zustand from './images/zustand-logo.webp';
 import { What } from './slides/What';
@@ -6,6 +6,8 @@ import { WhyNot } from './slides/WhyNot';
 import { Setup } from './slides/Setup';
 import { MyFirstStore } from './slides/MyFirstStore';
 import { WhyNotRedux } from './slides/WhyNotRedux';
+import { Example } from './slides/Example';
+import { useHash } from './hooks/useHash';
 
 const slideComponents = [
   What,
@@ -13,10 +15,12 @@ const slideComponents = [
   WhyNotRedux,
   Setup,
   MyFirstStore,
+  Example,
 ];
 
 export const App: React.FC = () => {
-  const [slide, setSlide] = useState(0);
+  const [hash, setHash] = useHash();
+  const slide = parseInt(hash) || 0;
 
   return (
     <div className="app">
@@ -28,7 +32,7 @@ export const App: React.FC = () => {
       <main>
         <div
           className="switcher prev"
-          onClick={() => setSlide((p) => Math.max(p - 1, 0))}
+          onClick={() => setHash(Math.max(slide - 1, 0))}
         >
           ❮
         </div>
@@ -48,7 +52,7 @@ export const App: React.FC = () => {
         </div>
         <div
           className="switcher next"
-          onClick={() => setSlide((p) => Math.min(p + 1, slideComponents.length - 1))}
+          onClick={() => setHash(Math.min(slide + 1, slideComponents.length - 1))}
         >
           ❯
         </div>
