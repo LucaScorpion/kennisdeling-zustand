@@ -4,18 +4,20 @@ import zustand from './images/zustand-logo.webp';
 import { What } from './slides/What';
 import { WhyNot } from './slides/WhyNot';
 import { Setup } from './slides/Setup';
-import { MyFirstStore } from './slides/MyFirstStore';
+import { StoreDefinition } from './slides/StoreDefinition';
 import { WhyNotRedux } from './slides/WhyNotRedux';
 import { Example } from './slides/Example';
 import { useHash } from './hooks/useHash';
 import { Final } from './slides/Final';
+import { StoreUsage } from './slides/StoreUsage';
 
 const slideComponents = [
   What,
   WhyNot,
   WhyNotRedux,
   Setup,
-  MyFirstStore,
+  StoreDefinition,
+  StoreUsage,
   Example,
   Final,
 ];

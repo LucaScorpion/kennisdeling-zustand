@@ -1,13 +1,23 @@
+import React from 'react';
+import { CodeBlock } from '../components/Code';
+
+export const StoreUsage: React.FC = () => (
+  <div>
+    <h2>Store usage</h2>
+    <CodeBlock language="tsx" code={`
 import React, { useState } from 'react';
 import { useOrderStore } from '../stores/order';
 
 export const Example: React.FC = () => {
+  // Gebruik de volledige store:
   const order = useOrderStore();
+  // Of een slice:
+  const id = useOrderStore((s) => s.id);
+
   const [idInput, setIdInput] = useState('');
 
   return (
     <div>
-      <h2>Voorbeeld</h2>
       <p>
         Order id: {order.id}
       </p>
@@ -18,3 +28,7 @@ export const Example: React.FC = () => {
     </div>
   );
 };
+`}
+    />
+  </div>
+);
