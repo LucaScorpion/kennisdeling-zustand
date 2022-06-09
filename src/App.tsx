@@ -10,6 +10,7 @@ import { Example } from './slides/Example';
 import { useHash } from './hooks/useHash';
 import { Final } from './slides/Final';
 import { StoreUsage } from './slides/StoreUsage';
+import { NonHookUsage } from './slides/NonHookUsage';
 
 const slideComponents = [
   What,
@@ -19,6 +20,7 @@ const slideComponents = [
   StoreDefinition,
   StoreUsage,
   Example,
+  NonHookUsage,
   Final,
 ];
 
