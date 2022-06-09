@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'prismjs-darcula-theme/darcula.css'
 import './style.scss';
 import { App } from './App';
 
