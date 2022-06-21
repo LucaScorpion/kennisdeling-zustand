@@ -7,7 +7,6 @@ export const NonHookUsage: React.FC = () => (
     <ul>
       <li>Store hook heeft functies
         voor <InlineCode code="getState" />, <InlineCode code="setState" />, <InlineCode code="subscribe" /></li>
-      <li>Ook handig voor in tests</li>
     </ul>
     <CodeBlock language="ts" code={`
 export class ApiService {
@@ -21,5 +20,13 @@ export class ApiService {
 }
 `}
     />
+    <ul>
+      <li>Ook handig voor in tests</li>
+    </ul>
+    <CodeBlock language="ts" code={`
+beforeEach(() => {
+  useAuthStore.setState({});
+});
+    `} />
   </div>
 );

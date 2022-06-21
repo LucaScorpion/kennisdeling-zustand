@@ -1,5 +1,4 @@
 import React from 'react';
-import banner from '../images/zustand-banner.jpg';
 
 export const What: React.FC = () => (
   <div>
@@ -11,6 +10,5 @@ export const What: React.FC = () => (
       <li>Simpel te gebruiken en begrijpen</li>
       <li>Niet opinionated</li>
     </ul>
-    <img src={banner} alt="" />
   </div>
 );

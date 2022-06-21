@@ -6,21 +6,25 @@ import { WhyNot } from './slides/WhyNot';
 import { Setup } from './slides/Setup';
 import { StoreDefinition } from './slides/StoreDefinition';
 import { WhyNotRedux } from './slides/WhyNotRedux';
-import { Example } from './slides/Example';
 import { useHash } from './hooks/useHash';
 import { Final } from './slides/Final';
 import { StoreUsage } from './slides/StoreUsage';
 import { NonHookUsage } from './slides/NonHookUsage';
+import { WhyThisSession } from './slides/WhyThisSession';
+import { Intro } from './slides/Intro';
+import { Demo } from './slides/Demo';
 
 const slideComponents = [
+  Intro,
+  WhyThisSession,
   What,
   WhyNot,
   WhyNotRedux,
   Setup,
   StoreDefinition,
   StoreUsage,
-  Example,
   NonHookUsage,
+  Demo,
   Final,
 ];
 
