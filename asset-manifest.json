@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/zustand-kennisdeling/static/css/main.23e76e01.css",
+    "main.js": "/zustand-kennisdeling/static/js/main.3bfffa29.js",
+    "static/media/zustand-banner.jpg": "/zustand-kennisdeling/static/media/zustand-banner.f448c151246d1627cb14.jpg",
+    "static/media/react-logo.png": "/zustand-kennisdeling/static/media/react-logo.f6b89d232c9bc9f828e5.png",
+    "static/media/libraries.jpg": "/zustand-kennisdeling/static/media/libraries.3c3d222e619863472c08.jpg",
+    "static/media/safe-deal.png": "/zustand-kennisdeling/static/media/safe-deal.30161cc19afe2dd885a0.png",
+    "static/media/zustand-logo.webp": "/zustand-kennisdeling/static/media/zustand-logo.d13f6dec94518e7f5d27.webp",
+    "index.html": "/zustand-kennisdeling/index.html",
+    "main.23e76e01.css.map": "/zustand-kennisdeling/static/css/main.23e76e01.css.map",
+    "main.3bfffa29.js.map": "/zustand-kennisdeling/static/js/main.3bfffa29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23e76e01.css",
+    "static/js/main.3bfffa29.js"
+  ]
+}
