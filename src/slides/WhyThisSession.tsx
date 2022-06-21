@@ -9,6 +9,6 @@ export const WhyThisSession: React.FC = () => (
       <li>Heb Redux vaker gebruikt, maar voelde nooit helemaal soepel</li>
       <li>Als experiment :)</li>
     </ul>
-    <img src={safeDeal} />
+    <img src={safeDeal} alt="" />
   </div>
 );
