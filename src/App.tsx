@@ -12,7 +12,8 @@ import { StoreUsage } from './slides/StoreUsage';
 import { NonHookUsage } from './slides/NonHookUsage';
 import { WhyThisSession } from './slides/WhyThisSession';
 import { Intro } from './slides/Intro';
-import { Demo } from './slides/Demo';
+import { AsyncStore } from './slides/AsyncStore';
+import { Middleware } from './slides/Middleware';
 
 const slideComponents = [
   Intro,
@@ -23,8 +24,9 @@ const slideComponents = [
   Setup,
   StoreDefinition,
   StoreUsage,
+  AsyncStore,
   NonHookUsage,
-  Demo,
+  Middleware,
   Final,
 ];
 

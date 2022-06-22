@@ -13,6 +13,7 @@ export class ApiService {
   public async getOrder(id: string): Promise<void> {
     const token = useAuthStore.getState().token;
     const order = await fetch(\`/api/orders/\${id}\`); // <- Use token here.
+
     useOrderStore.setState({ order });
     // Of, afhankelijk van de store:
     useOrderStore.getState().setOrder(order);
