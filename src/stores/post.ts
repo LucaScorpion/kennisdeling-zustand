@@ -18,7 +18,7 @@ export const usePostStore = create<PostStore>(devtools((set) => ({
   loading: false,
   getPost: async (id) => {
     set({ loading: true });
-    const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${id}`);
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     const post = await res.json();
     set({ post, loading: false });
   },
